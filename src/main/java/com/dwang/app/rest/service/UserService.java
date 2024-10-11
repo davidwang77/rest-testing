@@ -31,7 +31,7 @@ public class UserService {
             throw new InvalidUserRequestException("Cannot input of this age: " + updatedUser.getAge());
         }
         //how can we avoid updating null on fields that are not given to us from body
-        //ans: just use manual checks if null null then set field
+        //ans: just use manual checks if null then set field
         currentUser.setAge(updatedUser.getAge());
         currentUser.setOccupation(updatedUser.getOccupation());
         currentUser.setFirstName(updatedUser.getFirstName());
